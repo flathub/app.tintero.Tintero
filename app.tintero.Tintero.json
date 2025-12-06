@@ -9,8 +9,7 @@
     "--share=ipc",
     "--socket=wayland",
     "--socket=fallback-x11",
-    "--device=dri",
-    "--env=WEBKIT_DISABLE_COMPOSITING_MODE=1"
+    "--device=dri"
   ],
   "modules": [
     {
@@ -24,8 +23,8 @@
       "sources": [
         {
           "type": "file",
-          "url": "https://github.com/fnadalrod/Releases-Tintero/releases/download/0.5.2/Tintero.deb",
-          "sha256": "a642108f850bde797060f96ab0da5f14d1abf45911d43015cdd83ee0a12072cb",
+          "url": "https://github.com/fnadalrod/Releases-Tintero/releases/download/0.6.1/Tintero.deb",
+          "sha256": "a3e4c6a31b991c3b23165ac0470e6563fa7bf8595608a5f1fbf13eb66eac5aa1",
           "dest-filename": "Tintero.deb"
         }
       ]
