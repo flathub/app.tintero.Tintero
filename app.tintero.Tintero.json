@@ -8,8 +8,10 @@
     "--share=network",
     "--share=ipc",
     "--socket=wayland",
-    "--socket=x11",
-    "--device=dri"
+    "--socket=fallback-x11",
+    "--device=dri",
+    "--env=GDK_BACKEND=wayland,x11",
+    "--env=WEBKIT_DISABLE_DMABUF_RENDERER=1"
   ],
   "modules": [
     {
