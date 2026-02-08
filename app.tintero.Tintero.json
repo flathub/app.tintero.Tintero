@@ -13,18 +13,9 @@
     "--env=GDK_BACKEND=wayland,x11",
     "--env=WEBKIT_DISABLE_DMABUF_RENDERER=1",
 
-    "--filesystem=home",
-
-    "--filesystem=/usr/share/hunspell:ro",
-    "--filesystem=/usr/share/aspell:ro",
-    "--filesystem=/usr/share/myspell:ro",
-    "--filesystem=/usr/lib/aspell:ro",
-    "--filesystem=/usr/lib/x86_64-linux-gnu/aspell:ro",
-    "--filesystem=/usr/share/dict:ro",
-
-    "--talk-name=org.freedesktop.secrets",
-    "--talk-name=org.freedesktop.FileManager1",
-    "--talk-name=org.freedesktop.Flatpak"
+    "--filesystem=xdg-documents",
+    "--filesystem=xdg-download",
+    "--filesystem=xdg-config/Tintero"
   ],
   "modules": [
     {
@@ -39,7 +30,7 @@
         {
           "type": "file",
           "url": "https://github.com/fnadalrod/Releases-Tintero/releases/download/0.8.0/Tintero.deb",
-          "sha256": "5b6abd4758edf36f9421e6a71d40b411cb01ce98af4513ff1314a7452fe7505c",
+          "sha256": "d181c15c714345e35167580867c8f6de69a22d90a1694b818523f52bcbf8a41e",
           "dest-filename": "Tintero.deb"
         }
       ]
