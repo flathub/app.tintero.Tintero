@@ -14,7 +14,7 @@
     "--env=WEBKIT_DISABLE_DMABUF_RENDERER=1",
 
     "--filesystem=xdg-documents",
-    "--filesystem=xdg-download",
+    "--filesystem=xdg-download"
   ],
   "modules": [
     {
