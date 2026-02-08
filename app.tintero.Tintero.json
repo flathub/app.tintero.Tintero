@@ -15,7 +15,6 @@
 
     "--filesystem=xdg-documents",
     "--filesystem=xdg-download",
-    "--filesystem=xdg-config/Tintero"
   ],
   "modules": [
     {
