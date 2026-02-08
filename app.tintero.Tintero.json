@@ -11,7 +11,13 @@
     "--socket=fallback-x11",
     "--device=dri",
     "--env=GDK_BACKEND=wayland,x11",
-    "--env=WEBKIT_DISABLE_DMABUF_RENDERER=1"
+    "--env=WEBKIT_DISABLE_DMABUF_RENDERER=1",
+
+    "--filesystem=xdg-documents",
+    "--filesystem=xdg-download",
+    "--filesystem=xdg-desktop",
+    "--filesystem=/media",
+    "--filesystem=/run/media"
   ],
   "modules": [
     {
@@ -25,8 +31,8 @@
       "sources": [
         {
           "type": "file",
-          "url": "https://github.com/fnadalrod/Releases-Tintero/releases/download/0.7.6/Tintero.deb",
-          "sha256": "493303ff679b1c3eced1bf312b81fc0c8eb8ac31f520568380b026e08bd0d14c",
+          "url": "https://github.com/fnadalrod/Releases-Tintero/releases/download/0.8.0/Tintero.deb",
+          "sha256": "d181c15c714345e35167580867c8f6de69a22d90a1694b818523f52bcbf8a41e",
           "dest-filename": "Tintero.deb"
         }
       ]
