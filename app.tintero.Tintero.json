@@ -16,6 +16,7 @@
     "--filesystem=xdg-documents",
     "--filesystem=xdg-download",
     "--filesystem=xdg-desktop",
+    "--filesystem=/mnt",
     "--filesystem=/media",
     "--filesystem=/run/media"
   ],
@@ -31,8 +32,8 @@
       "sources": [
         {
           "type": "file",
-          "url": "https://github.com/fnadalrod/Releases-Tintero/releases/download/0.8.1/Tintero.deb",
-          "sha256": "b813d90e501ccb68e1a59bd94c4f765e48fbac63e0e7dd13d82951e7cb94793f",
+          "url": "https://github.com/fnadalrod/Releases-Tintero/releases/download/0.8.2/Tintero.deb",
+          "sha256": "5c78c9e7492a2dc4c459cb5e2e2b68481e9c9e874d41b745c24b592a0fdf5afe",
           "dest-filename": "Tintero.deb"
         }
       ]
