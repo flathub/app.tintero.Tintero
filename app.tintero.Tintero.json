@@ -32,8 +32,8 @@
       "sources": [
         {
           "type": "file",
-          "url": "https://github.com/fnadalrod/Releases-Tintero/releases/download/0.9.0/Tintero.deb",
-          "sha256": "b509f37c8c6c836f9a12397de621406d6ccca0591be961b02d649b4802d223e4",
+          "url": "https://github.com/fnadalrod/Releases-Tintero/releases/download/0.9.1/Tintero.deb",
+          "sha256": "5d271c2b6586c1d6f33b58db90c5801a304335dec84c62e8f2799697cd78a986",
           "dest-filename": "Tintero.deb"
         }
       ]
