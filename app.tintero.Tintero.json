@@ -12,7 +12,6 @@
     "--device=dri",
     "--env=GDK_BACKEND=wayland,x11",
     "--env=WEBKIT_DISABLE_DMABUF_RENDERER=1",
-
     "--filesystem=xdg-documents",
     "--filesystem=xdg-download",
     "--filesystem=xdg-desktop",
@@ -21,6 +20,155 @@
     "--filesystem=/run/media"
   ],
   "modules": [
+    {
+      "name": "hunspell",
+      "buildsystem": "autotools",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://github.com/hunspell/hunspell/releases/download/v1.7.2/hunspell-1.7.2.tar.gz",
+          "sha256": "11ddfa39afe28c28539fe65fc4f1592d410c1e9b6dd7d8a91ca25d85e9ec65b8"
+        }
+      ]
+    },
+    {
+      "name": "hunspell-dictionaries",
+      "buildsystem": "simple",
+      "sources": [
+        {
+          "type": "file",
+          "url": "https://raw.githubusercontent.com/LibreOffice/dictionaries/libreoffice-25.8.6.2/en/en_US.aff",
+          "sha256": "e746c882dd6f303c2c46e7452804b9201115a6942cfeb15f18f8edf774d2e24e",
+          "dest-filename": "en_US.aff"
+        },
+        {
+          "type": "file",
+          "url": "https://raw.githubusercontent.com/LibreOffice/dictionaries/libreoffice-25.8.6.2/en/en_US.dic",
+          "sha256": "f0b1a234bd178bdd01875b2a392a9647f888b8fe879f79c52aae62c2759b3647",
+          "dest-filename": "en_US.dic"
+        },
+        {
+          "type": "file",
+          "url": "https://raw.githubusercontent.com/LibreOffice/dictionaries/libreoffice-25.8.6.2/en/en_GB.aff",
+          "sha256": "0fd6ed120ef28957847d98ba5149b117e27116cf81b5aa36208453f6755a36fd",
+          "dest-filename": "en_GB.aff"
+        },
+        {
+          "type": "file",
+          "url": "https://raw.githubusercontent.com/LibreOffice/dictionaries/libreoffice-25.8.6.2/en/en_GB.dic",
+          "sha256": "04e90f34f5263bf26780e9c4a442e9ad16584e227af49ddd1b3b21b01df5b29c",
+          "dest-filename": "en_GB.dic"
+        },
+        {
+          "type": "file",
+          "url": "https://raw.githubusercontent.com/LibreOffice/dictionaries/libreoffice-25.8.6.2/es/es_ES.aff",
+          "sha256": "e73a9bf8e1383f4986a5dc9e2fbed49371c0c61f511c626d15586bd433c1cad9",
+          "dest-filename": "es_ES.aff"
+        },
+        {
+          "type": "file",
+          "url": "https://raw.githubusercontent.com/LibreOffice/dictionaries/libreoffice-25.8.6.2/es/es_ES.dic",
+          "sha256": "6975dddec3d5d2c676069537bc67b4b5f786c65c5d4cf6703a82acf779ac9ec1",
+          "dest-filename": "es_ES.dic"
+        },
+        {
+          "type": "file",
+          "url": "https://raw.githubusercontent.com/LibreOffice/dictionaries/libreoffice-25.8.6.2/fr_FR/fr.aff",
+          "sha256": "4730775ff4488c4a9aa4833393c8b2187126336eed766866300a58a75fe874f0",
+          "dest-filename": "fr_FR.aff"
+        },
+        {
+          "type": "file",
+          "url": "https://raw.githubusercontent.com/LibreOffice/dictionaries/libreoffice-25.8.6.2/fr_FR/fr.dic",
+          "sha256": "b99447ab2e655c1e4b64509cfd2e6c24821242bff1f971b49eac723e388a2d19",
+          "dest-filename": "fr_FR.dic"
+        },
+        {
+          "type": "file",
+          "url": "https://raw.githubusercontent.com/LibreOffice/dictionaries/libreoffice-25.8.6.2/pt_BR/pt_BR.aff",
+          "sha256": "21d8ad2a769a60e17e2b5ea4ef11d4d593a58b9e2a82d642ef82d6a4c5523865",
+          "dest-filename": "pt_BR.aff"
+        },
+        {
+          "type": "file",
+          "url": "https://raw.githubusercontent.com/LibreOffice/dictionaries/libreoffice-25.8.6.2/pt_BR/pt_BR.dic",
+          "sha256": "a38bfb26b68ece2834e79fe83e48d5792652970ace12db89d1b9674bf9933183",
+          "dest-filename": "pt_BR.dic"
+        },
+        {
+          "type": "file",
+          "url": "https://raw.githubusercontent.com/LibreOffice/dictionaries/libreoffice-25.8.6.2/pt_PT/pt_PT.aff",
+          "sha256": "975a209fcc892cb382fa5f34a28c391a39668661ce373ae071287809c5fcae24",
+          "dest-filename": "pt_PT.aff"
+        },
+        {
+          "type": "file",
+          "url": "https://raw.githubusercontent.com/LibreOffice/dictionaries/libreoffice-25.8.6.2/pt_PT/pt_PT.dic",
+          "sha256": "9d90cfd9fb15312db71fbe46c11f871df67684dae7c218ab270142e7ae68c377",
+          "dest-filename": "pt_PT.dic"
+        },
+        {
+          "type": "file",
+          "url": "https://raw.githubusercontent.com/LibreOffice/dictionaries/libreoffice-25.8.6.2/ru_RU/ru_RU.aff",
+          "sha256": "38ce7d4af78e211e9bafe4bf7e3d6a2c420591136cb738ec6648f8fdf6524cd7",
+          "dest-filename": "ru_RU.aff"
+        },
+        {
+          "type": "file",
+          "url": "https://raw.githubusercontent.com/LibreOffice/dictionaries/libreoffice-25.8.6.2/ru_RU/ru_RU.dic",
+          "sha256": "f6047416a0204adbecf3a451b874ec8a97ee37e2cbc714466ef04d8dbcc0d6fc",
+          "dest-filename": "ru_RU.dic"
+        },
+        {
+          "type": "file",
+          "url": "https://raw.githubusercontent.com/LibreOffice/dictionaries/libreoffice-25.8.6.2/nl_NL/nl_NL.aff",
+          "sha256": "0ee9233fe1c5785f9a803a05ac882e8363ac785c06fbd455af88ce0c0a57324b",
+          "dest-filename": "nl_NL.aff"
+        },
+        {
+          "type": "file",
+          "url": "https://raw.githubusercontent.com/LibreOffice/dictionaries/libreoffice-25.8.6.2/nl_NL/nl_NL.dic",
+          "sha256": "24782020d0d0bd465270027f51443b752f8ddaecf7c612a225e8668e1746aa24",
+          "dest-filename": "nl_NL.dic"
+        },
+        {
+          "type": "file",
+          "url": "https://raw.githubusercontent.com/LibreOffice/dictionaries/libreoffice-25.8.6.2/pl_PL/pl_PL.aff",
+          "sha256": "7c37b9bde78054e43365b488a13859094c88bc66664b5b7a7bb073626454b38e",
+          "dest-filename": "pl_PL.aff"
+        },
+        {
+          "type": "file",
+          "url": "https://raw.githubusercontent.com/LibreOffice/dictionaries/libreoffice-25.8.6.2/pl_PL/pl_PL.dic",
+          "sha256": "215fd73aa47b11e7fdd2e4d655e9fe37be4acdae16ff833badcfdfce79110aad",
+          "dest-filename": "pl_PL.dic"
+        },
+        {
+          "type": "file",
+          "url": "https://raw.githubusercontent.com/LibreOffice/dictionaries/libreoffice-25.8.6.2/ca/dictionaries/ca.aff",
+          "sha256": "abcca353b16af2d91be51d68899f47e5076a47489d08f696717fbac44074ddb8",
+          "dest-filename": "ca_ES.aff"
+        },
+        {
+          "type": "file",
+          "url": "https://raw.githubusercontent.com/LibreOffice/dictionaries/libreoffice-25.8.6.2/ca/dictionaries/ca.dic",
+          "sha256": "4838bb46776f5d82a3823aa7abb17cd00b9dc0c301d1b6d002e1ab6558fa07ca",
+          "dest-filename": "ca_ES.dic"
+        }
+      ],
+      "build-commands": [
+        "install -dm755 ${FLATPAK_DEST}/share/hunspell",
+        "install -m644 en_US.aff en_US.dic en_GB.aff en_GB.dic ${FLATPAK_DEST}/share/hunspell/",
+        "install -m644 es_ES.aff es_ES.dic ${FLATPAK_DEST}/share/hunspell/",
+        "install -m644 fr_FR.aff fr_FR.dic ${FLATPAK_DEST}/share/hunspell/",
+        "install -m644 pt_BR.aff pt_BR.dic pt_PT.aff pt_PT.dic ${FLATPAK_DEST}/share/hunspell/",
+        "install -m644 ru_RU.aff ru_RU.dic ${FLATPAK_DEST}/share/hunspell/",
+        "install -m644 nl_NL.aff nl_NL.dic ${FLATPAK_DEST}/share/hunspell/",
+        "install -m644 pl_PL.aff pl_PL.dic ${FLATPAK_DEST}/share/hunspell/",
+        "install -m644 ca_ES.aff ca_ES.dic ${FLATPAK_DEST}/share/hunspell/",
+        "ln -sf ${FLATPAK_DEST}/share/hunspell ${FLATPAK_DEST}/share/myspell"
+      ]
+    },
     {
       "name": "tintero",
       "buildsystem": "simple",
@@ -32,8 +180,8 @@
       "sources": [
         {
           "type": "file",
-          "url": "https://github.com/fnadalrod/Releases-Tintero/releases/download/0.9.3/Tintero.deb",
-          "sha256": "85a66f442b130348bca73d44144e2a80fb26488e139ee8e1ee24910a117ff282",
+          "url": "https://github.com/fnadalrod/Releases-Tintero/releases/download/0.9.4/Tintero.deb",
+          "sha256": "23f2faedd3e2599bd6406e171c99fff33055caf1ec027ab48f49a23449dc8da3",
           "dest-filename": "Tintero.deb"
         }
       ]
