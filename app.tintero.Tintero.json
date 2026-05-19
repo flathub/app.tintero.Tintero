@@ -4,6 +4,7 @@
   "runtime-version": "49",
   "sdk": "org.gnome.Sdk",
   "command": "app",
+  "tags": ["proprietary"],  
   "finish-args": [
     "--share=network",
     "--share=ipc",
