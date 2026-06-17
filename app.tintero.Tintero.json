@@ -181,7 +181,7 @@
         {
           "type": "file",
           "url": "https://github.com/fnadalrod/Releases-Tintero/releases/download/0.9.19/Tintero.deb",
-          "sha256": "8d4518205bf1ed637300fbd96ad95eb71d7a4548ee40fb786fdd5059385cf1a1",
+          "sha256": "fba4ad97ea8f610d41115758f2e07f66eb7b955c8f0dac11d96fd11842cf137f",
           "dest-filename": "Tintero.deb"
         }
       ]
