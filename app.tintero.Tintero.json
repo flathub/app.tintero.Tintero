@@ -255,15 +255,15 @@
         {
           "type": "file",
           "only-arches": ["x86_64"],
-          "url": "https://github.com/fnadalrod/Releases-Tintero/releases/download/0.10.6/Tintero.deb",
-          "sha256": "ed30b3e72bcadacbeceeee0c756262d62c7afd59401ae3bdce6d4f878e1ddf1f",
+          "url": "https://github.com/fnadalrod/Releases-Tintero/releases/download/0.10.7/Tintero.deb",
+          "sha256": "23e20652546344b85d52e0041bf57287cb82ef5b59c98daaf9d523d32760f7f5",
           "dest-filename": "Tintero.deb"
         },
         {
           "type": "file",
           "only-arches": ["aarch64"],
-          "url": "https://github.com/fnadalrod/Releases-Tintero/releases/download/0.10.6/Tintero-arm64.deb",
-          "sha256": "c70199aec539529fb3566c8852d5c0f1b50655e504e8ecfbffaf2abe61b5c115",
+          "url": "https://github.com/fnadalrod/Releases-Tintero/releases/download/0.10.7/Tintero-arm64.deb",
+          "sha256": "2987ddb3805e3cd39f1d4ca2edb3fdef0bb749e4e22b3dc7cf090f1718079b04",
           "dest-filename": "Tintero.deb"
         }
       ]
